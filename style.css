@@ -9,6 +9,15 @@ body{
     background-color: rgba(17, 18, 27, 0.8);
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    color: gold;
+}
+
 nav ul{
     display: flex;
     justify-content: space-evenly;
@@ -16,7 +25,7 @@ nav ul{
     width: 100%;
     background-color: rgb(91, 167, 202);
     list-style: none;
-    padding: .5rem;
+    padding: .1rem;
     align-items: center;
 }
 
@@ -39,7 +48,7 @@ nav a{
 }
 
 main{
-    padding-top: 7.2rem;
+    padding-top: 6rem;
 }
 
 #socials{
@@ -61,9 +70,10 @@ main{
     display: flex;
     width: 100%;
     height: 10rem;
-    background-image: url(./Media/Images/main\ div\ image.jpg);
+    background-image: url(./Media/Images/figure.avif);
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     align-items: center;
     border-top: white 1px solid;
     border-bottom: white 1px solid;
@@ -90,7 +100,8 @@ main{
 }
 
 .text{
-    margin: 1rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
     
 }
 
@@ -145,3 +156,167 @@ main{
     margin-top: 1rem;
     text-align: center;
 }
+
+/*loading bar*/
+
+.loader-container {
+    text-align: center;
+    margin-top: 1rem;
+    color: white;
+  }
+  
+  .loader {
+    width: 200px;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .progress {
+    width: 0;
+    height: 100%;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    animation: progressAnimation 3s infinite;
+  }
+  
+  .loading-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  @keyframes progressAnimation {
+    0% { width: 0; }
+    100% { width: 100%; }
+  }
+
+  /*loading bar ends*/
+
+  /*projects*/
+
+  .projectHeader{
+    border-top: white 1px solid;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .projectHeader h2{
+    margin-top: 1rem;
+    font-size: 24px;
+    color: white;
+    text-decoration: underline;
+    text-align: left;
+  }
+
+  .projects{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    
+    justify-content:space-around;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #projectP{
+    text-align: left;
+    color: white;
+    margin-top: 0.7rem;
+  }
+
+  .poke{
+    width: 30%;
+    margin-top: 1rem;
+    background-image: url(./Media/Images/Poke.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+
+  .poke:hover{
+    border: rgba(226, 226, 226, 0.7) 2px solid;
+  }
+
+  .barebones{
+    width: 30%;
+    margin-top: 1rem;
+    background-image: url(./Media/Images/barebones.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 3px;
+  }
+
+  .barebones:hover{
+    border: rgba(226, 226, 226, 0.7) 2px solid;
+  }
+
+  .barebonesV2{
+    width: 30%;
+    margin-top: 1rem;
+    background-image: url(./Media/Images/barebonesV2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px;
+  }
+
+  .barebonesV2:hover{
+    border: rgba(226, 226, 226, 0.7) 2px solid;
+  }
+
+  /*tooltip*/
+
+  /* Tooltip Styles */
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border-radius: 4px;
+    z-index: 1;
+    font-size: 12px;
+  }
+  
+  .poke {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .poke:hover .tooltip {
+    display: block;
+  }
+
+  .barebones {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .barebones:hover .tooltip {
+    display: block;
+  }
+
+  .barebonesV2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .barebonesV2:hover .tooltip {
+    display: block;
+  }
+
+  footer{
+    display: flex;
+    background-color:rgb(91, 167, 202) ;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 10px;
+    top: 200px;
+  }
+
+  footer a{
+    text-decoration: underline;
+  }
