@@ -344,4 +344,8 @@ main{
    .languages{
     flex-wrap: wrap;
    }
+
+   nav ul li{
+    font-size: 18px;
+   }
   }
