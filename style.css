@@ -1,0 +1,147 @@
+*{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body{
+    background-color: rgba(17, 18, 27, 0.8);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;  
+    width: 100%;
+    background-color: rgb(91, 167, 202);
+    list-style: none;
+    padding: .5rem;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 1rem;
+    margin: 0;
+    font-size: 22px;
+    border-radius: 100px;
+    text-align: center;
+    
+}
+
+nav ul li:hover{
+    background-color: rgba(216, 216, 216, 0.137);
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    padding-top: 7.2rem;
+}
+
+#socials{
+    width: 3rem;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.image{
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    background-image: url(./Media/Images/main\ div\ image.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    border-top: white 1px solid;
+    border-bottom: white 1px solid;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-style: italic;
+    font-style: bold;
+}
+
+.textContainer{
+    display: flex;
+    width: 100%;
+    border-bottom: white 1px solid;
+    color: white;
+}
+
+.text{
+    margin: 1rem;
+    
+}
+
+.text h2{
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+.languages{
+    display: flex;
+    align-items: center;  
+    justify-content: space-evenly;
+    background-color: rgba(233, 228, 228, 0.7);
+    margin-top: 1rem;
+}
+
+
+.languages img{
+    width: 3rem;
+    margin: 1rem;
+}
+
+#html{
+    width: 4.5rem;
+}
+
+#js{
+    width: 4rem;
+}
+
+#md{
+    width: 4rem;
+}
+
+#node{
+    width: 6rem;
+}
+
+.langHeader{
+    margin-top: 1rem;
+    color: white;
+    text-decoration: underline;
+}
+
+.langHeader h2{
+    font-size: 24px;
+}
+
+.disclaimer{
+    color: white;
+    opacity: 0.5;
+    margin-top: 1rem;
+    text-align: center;
+}
